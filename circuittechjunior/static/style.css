@@ -1,0 +1,125 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121a31;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --brand: #f97316;
+  --border: #1f2a44;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial;
+  background: radial-gradient(1200px 800px at 20% -10%, #1a2242 0%, var(--bg) 55%), var(--bg);
+  color: var(--text);
+}
+
+/* Containers */
+.container {
+  max-width: 450px;
+  margin: 80px auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Typography */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--brand);
+}
+
+p {
+  text-align: center;
+  color: var(--muted);
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.3);
+  color: var(--text);
+}
+
+button {
+  background: var(--brand);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #fb923c;
+}
+
+/* Dashboard Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+}
+
+.card p {
+  margin: 6px 0;
+  color: var(--text);
+}
+
+.notice {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px dashed #f59e0b;
+  background: rgba(245,158,11,0.08);
+  color: #fde68a;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.logout {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
